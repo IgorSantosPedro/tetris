@@ -1,0 +1,68 @@
+.botoes {
+    width: 7%;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 30%;
+    float: left;
+}
+
+.botoes button {
+    width: 100%;
+}
+
+
+.tabuleiro, .info {
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;    
+}
+
+.tabuleiro {
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    padding: 0;
+}
+
+
+.info {
+    float: left;
+    margin-left: 7%;
+    padding: 7px;
+    width: 20%;
+    height: 400px;
+    background-color:  rgb(0, 0, 255);
+    border-radius: 3%;
+}
+
+.caixa, .ranking {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    background-color: #000;
+    color: chartreuse;
+    text-align: center;
+}
+
+.caixa {
+    padding: 10px 0 0;
+    height: 30px;
+    margin-bottom: 7px;
+}
+
+.ranking {
+    height: 100px;
+}
+
+span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.rank {
+    margin-bottom: 2px;
+}
+.rank li {
+    list-style-type: none;
+    display: inline;
+}
