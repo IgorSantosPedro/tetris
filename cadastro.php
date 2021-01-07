@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Tela de cadastro</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
 </head>
 <body>
     <div class="container">
         <div class="panel">
             <img src="_img/logo.png" alt="Tetris" class="center">
-            <form action="" method="post">
+            <form action="funcoes/cadastrar.php" method="post">
                 <h2>Tela de cadastro</h2>
                 <p>
                     <label for="nome">Nome Completo</label>
@@ -26,12 +27,17 @@
                 </p>
                 <p>
                     <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" placeholder="(00)90000-0000"  pattern="([0-9]{2})-[0-9]{5}-[0-9]{4}" required>
+                    <input type="tel" name="telefone" placeholder="(00)90000-0000" required>
                 </p>
                 <p>
-                    <label for="usuario">Usuário (Deve ser único)</label>
+                    <label for="usuario">Usuário (Deve ser único e ter a partir de 8 caracteres)</label>
                     <input type="text" name="usuario" placeholder="uniqueUser" required>
                 </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="email@gmail.com" required>
+                </p>
+
                 <p>
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="********" required>
@@ -42,9 +48,7 @@
                 </p>
                 <input type="submit" value="Cadastrar">
             </form>
-            <button class="link">
-                <a href="index.html">Fazer Login</a>
-            </button>
+                <a href="index.php" class="link">Fazer Login</a>
         </div>
     </div>
 </body>
